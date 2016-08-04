@@ -8,48 +8,57 @@ public class Duck {
     int numberFeather;
     boolean makesItHome;
 
+    //This is the constructor
+    public Duck(String duckName, String duckType, int age, int numberFeather) {
+        this.duckName = duckName;
+        this.duckType = duckType;
+        this.age = age;
+        this.numberFeather = numberFeather;
+
+    }
+
     public void typing(){
-        duckType = "Dabbling";
-        System.out.println(duckName + " is a " + duckType + " duck.");
+        this.duckType = "Dabbling";
+        System.out.println(this.duckName + " is a " + this.duckType + " duck.");
     }
 
     public void featherFinder(int age){
         if (age <= 1){
-            int numberFeather = 200;
-            System.out.println("The number of feathers that " + duckName + " has is " + numberFeather);
+            this.numberFeather = 203;
+            System.out.println("The number of feathers that " + this.duckName + " has is " + this.numberFeather);
         }
         else if (age <= 2){
-            int numberFeather = 340;
-            System.out.println("The number of feathers that " + duckName + " has is " + numberFeather);
+            this.numberFeather = 344;
+            System.out.println("The number of feathers that " + this.duckName + " has is " + this.numberFeather);
         }
         else if (age <= 4){
-            int numberFeather = 540;
-            System.out.println("The number of feathers that " + duckName + " has is " + numberFeather);
+            this.numberFeather = 567;
+            System.out.println("The number of feathers that " + this.duckName + " has is " + this.numberFeather);
         }
         else if (age <= 6){
-            int numberFeather = 640;
-            System.out.println("The number of feathers that " + duckName + " has is " + numberFeather);
+            this.numberFeather = 698;
+            System.out.println("The number of feathers that " + this.duckName + " has is " + this.numberFeather);
         }
         else {
-            int numberFeather = 840;
-            System.out.println("The number of feathers that " + duckName + " has is " + numberFeather);
+            this.numberFeather = 821;
+            System.out.println("The number of feathers that " + this.duckName + " has is " + this.numberFeather);
         }
 
     }
 
     public void homeBound(boolean homes){
         if (homes == true){
-        makesItHome = true;
+            this.makesItHome = true;
 
-        System.out.println(duckName + " will go home to Canada!");}
+        System.out.println(this.duckName + " will go home to Canada!");}
         else {
-            System.out.println(duckName + " will go home with a Hunter as a main dinner dish!");
+            System.out.println(this.duckName + " will go home with a Hunter as a main dinner dish!");
         }
     }
 
     public String toString(){
 
-        return duckName + " was banded so this is a rare find.";
+        return this.duckName + " was banded so this is a rare find.";
     }
 
 }
